@@ -11,9 +11,10 @@
         if(!empty($user_name) && !empty($password)){
             $query = "Select * from users where user_name = '$user_name'";
             
-            $data = mysqli_query($con, $query);
+            $data = $mysqli->query($query);
 
-            if($data && mysqli_num_rows($data) > 0){
+            if($data && $data->num_rows > 0){
+
                 $result = mysqli_fetch_assoc($data);
                 
                 $hashed_password = sha1($password);

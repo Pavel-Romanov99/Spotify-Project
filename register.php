@@ -17,7 +17,11 @@
 
             $query = "insert into users (user_id, user_name, password) values ('$user_id', '$user_name', '$hashed_password')";
 
-            mysqli_query($con, $query);
+            if($mysqli->query($query)){
+                echo "new record added to db";
+            }else {
+                echo $mysqli->error;
+            }
             
             header("Location: login.php");
             die;

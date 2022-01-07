@@ -23,6 +23,15 @@
                                     echo "No friends found\n"; 
                                 }
                             ?>
+                        <?php
+                            if(empty($_SESSION['error'])){
+                            
+                            }else{ ?>
+                                <h4 style="color:red"><?php echo $_SESSION['error'] ?> </h4>
+                                <?php
+                                unset($_SESSION['error']);
+                                }
+                        ?>
                         <form  action="addFriendHandling.php" method="POST" id = "add-friends-form">
                             <div class = "friends-search-container">
                                 <input type="text" class ="friends-search" placeholder="Search username..." name="friend-username">

@@ -5,6 +5,8 @@
 
     $current_user_data = checkLogin($mysqli);
 
+    $errors = array();
+
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
         
         //get the name in the post request
@@ -25,22 +27,35 @@
                 $result = mysqli_fetch_assoc($data);
                 $friend_username = $result['user_name'];
                 $friend_id = $result['user_id'];
-                
-                $query_add = "insert into friends (user_id, friend_id, friend_username) values ('$current_user_id', '$friend_id', '$friend_username')";
 
-                if($mysqli->query($query_add)){
-                    echo "new friend added to db";
+                if($friend_id != $current_user_id){
+                    $query_add = "insert into friends (user_id, friend_id, friend_username) values ('$current_user_id', '$friend_id', '$friend_username')";
+
+                    $alreadyFriends = "select * from friends where user_id = '$current_user_id' and friend_id = '$friend_id'";
+
+                    $alreadyFriendsData = $mysqli->query($alreadyFriends);
+
+                    if($alreadyFriends){
+                        $_SESSION['error'] = "You are already friends!";
+                    }
+                    else{
+                        if($mysqli->query($query_add)){
+                            echo "new friend added to db";
+                        }else {
+                            echo $mysqli->error;
+                        }
+                    }
                 }else {
-                    echo $mysqli->error;
+                    $_SESSION['error'] = "You cannot add yourself";
                 }
-
             }else{
-                echo "No user found\n"; 
+                $_SESSION['error'] = "User not found!";
             }
         }else{
-            echo "Cannot enter an empty username!\n";
+            $_SESSION['error'] = "Username cannot be empty";
         }
-        header("Location: home.php");
+        header("Location: myLibrary.php");
+        die;
     }else{
         echo "Ne stava";
     }

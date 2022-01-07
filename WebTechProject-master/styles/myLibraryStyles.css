@@ -1,0 +1,115 @@
+.song-content {
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+height: 5%;
+padding-top: 1.5%;
+padding-bottom: 1.5%;
+width: 100%;
+font-size: 15px;
+}
+
+.cover-icon {
+width: 6vh;
+height: 6vh;
+border-radius: 50%;
+background-color: white;
+margin-left: 3%;
+}
+
+.grey-text {
+color: #888;
+}
+
+.song-content:hover .song-info .grey-text{
+background-color: rgb(0, 212, 237);
+color: white;
+}
+
+.song-content:hover {
+background-color: rgb(0, 212, 237);
+color: white;
+}
+
+.song-info {
+display: flex;
+flex-direction: column;
+max-width: 65%;
+width: 65%;
+margin-left: 5%;
+}
+
+
+.songs-list-button {
+background-color: transparent;
+border: 0;
+color: #dfdbdf;
+font-size: 15px;
+cursor: pointer;
+padding: 10px;
+margin: 0 20px;
+color:black;
+}
+
+.songs-list-button:hover {
+color: rgb(254, 74, 73);
+}
+
+.page-title {
+    display: flex;
+    justify-content: center;
+}
+
+.song-upload {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    border-bottom: 2px solid rgb(233, 233, 233);
+    padding-bottom: 1%;
+}
+
+#upload-messages {
+    text-align: center;
+}
+
+#song-upload-form {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    display: flex;
+    justify-content:space-around;
+}
+
+.form-field {
+    border: 2px solid black;
+    font-family: "Comfortaa", sans-serif;
+    border-radius: 16px;
+    padding-left: 1%;
+    height: 100%;
+}
+
+.form-button {
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(254, 74, 73);
+    border: none;
+    height: 130%;
+    font-family: "Comfortaa", sans-serif;
+}
+
+#submit-button {
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(254, 74, 73);
+    border: none;
+    height: 130%;
+    width: 17%;
+    font-family: "Comfortaa", sans-serif;
+}
+
+.form-button:hover, #submit-button:hover {
+    background-color: rgb(0, 212, 237);
+    cursor: pointer;
+}

@@ -1,0 +1,12 @@
+.side-menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 120px;
+  height: auto;
+}

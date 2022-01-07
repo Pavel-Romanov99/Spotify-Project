@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: "Comfortaa", cursive;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.image-container {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 90%;
+  height: auto;
+  transform: rotate(20deg);
+}
+
+#cover-image {
+  width: 90%;
+  height: auto;
+  transform: rotate(0);
+}
+
+.right-container {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.logo img {
+  width: 53px;
+  height: 39px;
+}
+
+.login-avatar {
+  width: 15%;
+  height: auto;
+}
+
+button {
+  border-radius: 20px;
+  background-color: #ff4a49;
+  color: white;
+  width: 90%;
+  border: 1px solid #ff4a49;
+  height: 40px;
+  margin-top: 5%;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: white;
+  color: #ff4a49;
+}
+
+a {
+  text-decoration: none;
+  color: #ff4a49;
+}
+
+a:hover {
+  color: #00d4ed;
+}
+
+.singup-link {
+  float: right;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 5%;
+}
+
+label {
+  color: #cbcacf;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid grey;
+  width: 90%;
+  height: 35px;
+  font-size: 20px;
+}
+
+input:focus {
+  border-bottom: 2px solid #ff4a49;
+  outline: 0;
+  outline-color: transparent;
+  outline-style: none;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 7%;
+}

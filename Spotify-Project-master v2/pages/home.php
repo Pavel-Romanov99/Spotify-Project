@@ -36,7 +36,7 @@
             <div class="track-container">
                 <div class="content">
                     <div class="greetings-message">
-                        <h1>Good afternoon, <?php echo $current_user_data["user_name"]?> !</h1>
+                        <h1>Welcome back, <?php echo $current_user_data["user_name"]?> !</h1>
                     </div>
 
 
@@ -54,13 +54,13 @@
 
                                 if(!empty($artist_name)){
                                     
-                                    $query = "select * from songs where uploader = '$artist_name'";
+                                    $query = "select * from songs where uploader = '$artist_name' or name = '$artist_name' or author = '$artist_name'";
 
                                     $data = $mysqli->query($query);
 
                                     if($data && $data->num_rows > 0){
                                         
-                                        echo '<h3>Found '.$data->num_rows.' songs from '.$artist_name.'</h3>';
+                                        echo '<h3>Found '.$data->num_rows.' songs from you searching '.$artist_name.'</h3>';
 
                                         while($song = mysqli_fetch_assoc($data)){
                                             

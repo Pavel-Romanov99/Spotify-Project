@@ -47,6 +47,12 @@
                         </form>
                         <ul id="tracks">
                         <?php
+                                if(isset($_SESSION['artist_error'])){
+                                    echo '<h3 style="color:red">'.$_SESSION['artist_error'].'</h3>';
+                                    unset($_SESSION['artist_error']); 
+                                }
+                        ?>
+                        <?php
                             if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
                                 $errors = array();
@@ -78,13 +84,17 @@
                                             </button>
                                             </div>';
                                         }
-
+                                        header("Location: home.php");
                                     }else {
-                                        $errors['error'] = "Could not find artist\n";
+                                        $_SESSION['artist_error'] = "Could not find artist\n";
+                                        header("Location: home.php");
+
                                     }
 
                                 }else{
-                                    $errors['error'] = "Please enter an artist\n";
+                                    $_SESSION['artist_error'] = "Please enter an artist\n";
+                                    header("Location: home.php");
+
                                 }
                             }
                         ?>

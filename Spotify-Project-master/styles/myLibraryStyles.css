@@ -1,0 +1,206 @@
+.song-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 30px;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  width: 100%;
+  font-size: 15px;
+}
+
+.cover-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 3%;
+}
+
+.grey-text {
+  color: #888;
+}
+
+.song-content:hover .song-info .grey-text {
+  background-color: rgb(0, 212, 237);
+  color: white;
+}
+
+.song-content:hover {
+  background-color: rgb(0, 212, 237);
+  color: white;
+}
+
+.song-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 65%;
+  width: 65%;
+  margin-left: 5%;
+}
+
+.songs-list-button {
+  background-color: transparent;
+  border: 0;
+  color: #dfdbdf;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 20px;
+  color: black;
+}
+
+.download-link:link,
+.download-link:visited {
+  color: black;
+}
+
+.songs-list-button:hover,
+.download-link:hover {
+  color: rgb(254, 74, 73);
+}
+
+.page-title {
+  display: flex;
+  justify-content: center;
+}
+
+.song-upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-bottom: 2px solid rgb(233, 233, 233);
+  padding-bottom: 1%;
+}
+
+#upload-messages {
+  text-align: center;
+}
+
+#song-upload-form {
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  display: flex;
+  justify-content: space-around;
+  column-gap: 20px;
+}
+
+.form-field {
+  border: 2px solid rgb(254, 74, 73);
+  font-family: "Comfortaa", sans-serif;
+  border-radius: 16px;
+  padding-left: 1%;
+  height: 30px;
+}
+
+.form-field:focus {
+  border: 2px solid rgb(0, 212, 237);
+}
+
+.form-button {
+  border-radius: 20px;
+  color: white;
+  background-color: rgb(254, 74, 73);
+  border: none;
+  width: 20%;
+  height: 35px;
+  font-family: "Comfortaa", sans-serif;
+}
+
+#upload-button {
+  border-radius: 20px;
+  color: white;
+  background-color: rgb(254, 74, 73);
+  border: 3px solid rgb(0, 212, 237);
+  height: 35px;
+  width: 20%;
+  font-family: "Comfortaa", sans-serif;
+}
+
+.form-button:hover {
+  background-color: rgb(0, 212, 237);
+  cursor: pointer;
+}
+
+#upload-button:hover {
+  background-color: rgb(0, 212, 237);
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  text-align: left;
+  background-color: white;
+  width: 250px;
+  max-height: 45vh;
+  margin-top: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 15;
+  right: 0;
+  left: 10;
+  border: solid 2px rgb(254, 74, 73);
+  border-radius: 20px;
+  font-family: "Comfortaa", sans-serif;
+  cursor: default;
+}
+
+.share-button {
+  border-radius: 20px;
+  color: white;
+  background-color: rgb(254, 74, 73);
+  font-family: "Comfortaa", sans-serif;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  padding: 10px;
+}
+
+.share-button:hover {
+  background-color: rgb(0, 212, 237);
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: inline-block;
+}
+
+.message-box {
+  text-align: center;
+  font-weight: bold;
+}
+
+.checkbox-container {
+  margin-left: 40px;
+  display: inline-block;
+}
+
+.checkbox-label {
+  display: inline-block;
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.new-playlist-field {
+  display: block;
+  border: 2px solid rgb(254, 74, 73);
+  font-family: "Comfortaa", sans-serif;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}

@@ -1,0 +1,113 @@
+
+.search-bar {
+    width: 33%;
+    height: 30px;
+    border-radius: 16px;
+    border: 2px solid black;
+    font-family: "Comfortaa", sans-serif;
+}
+  
+.search-bar::placeholder {
+    padding-left: 8px;
+}
+  
+#search_artist {
+    height: 35px;
+    width: 10%;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(254, 74, 73);
+    border: none;
+    margin-left: 20px;
+    font-family: "Comfortaa", sans-serif;
+}
+  
+#search_artist:hover {
+    background-color: rgb(0, 212, 237);
+    cursor: pointer;
+}
+  
+#search_artist:focus {
+    background-color: black;
+}
+  
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.greetings-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#tracks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.song-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30px;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    width: 100%;
+    font-size: 15px;
+}
+  
+.cover-icon {
+    width: 6.5vh;
+    height: 6.5vh;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 3%;
+}
+  
+.grey-text {
+    color: #888;
+}
+  
+.song-content:hover .song-info .grey-text {
+    background-color: rgb(0, 212, 237);
+    color: white;
+}
+  
+.song-content:hover {
+    background-color: rgb(0, 212, 237);
+    color: white;
+}
+  
+.song-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 65%;
+    width: 65%;
+    margin-left: 5%;
+}
+  
+.songs-list-button {
+    background-color: transparent;
+    border: 0;
+    color: #dfdbdf;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 20px;
+    color: black;
+}
+.songs-list-button:hover {
+  color: rgb(254, 74, 73);
+}
+
+.error-message {
+    color: red;
+}

@@ -1,0 +1,82 @@
+.page-title {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.delete-user-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  font-size: 15px;
+}
+
+.delete-user-row:hover {
+  background-color: rgb(0, 212, 237);
+  color: white;
+}
+
+.delete-user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.delete-user-info {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  overflow-x: hidden;
+}
+
+.delete-user-button {
+  background-color: transparent;
+  border: 0;
+  color: #dfdbdf;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 20px;
+  color: black;
+}
+
+.delete-user-button:hover {
+  color: rgb(254, 74, 73);
+}
+
+.confirmation-box {
+  width: 98%;
+  margin-left: 1%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  border: solid 2px rgb(254, 74, 73);
+  border-radius: 20px;
+}
+
+.confirmation-button {
+    height: 35px;
+    width: 60px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(254, 74, 73);
+    border: none;
+    margin: 10px 20px 0px 20px;
+    font-family: Comfortaa;
+}
+
+.confirmation-button:hover{
+  background-color: rgb(0, 212, 237);
+  cursor: pointer;
+}

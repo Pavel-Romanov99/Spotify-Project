@@ -1,0 +1,91 @@
+.page-title {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.song-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 30px;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+  width: 100%;
+  font-size: 15px;
+}
+
+.cover-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 3%;
+}
+
+.grey-text {
+  color: #888;
+}
+
+.song-content:hover .song-info .grey-text {
+  background-color: rgb(0, 212, 237);
+  color: white;
+}
+
+.song-content:hover {
+  background-color: rgb(0, 212, 237);
+  color: white;
+}
+
+.song-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 65%;
+  width: 65%;
+  margin-left: 5%;
+}
+
+.songs-list-button {
+  background-color: transparent;
+  border: 0;
+  color: #dfdbdf;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 20px;
+  color: black;
+}
+
+.confirmation-box {
+  width: 98%;
+  margin-left: 1%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  border: solid 2px rgb(254, 74, 73);
+  border-radius: 20px;
+}
+
+.confirmation-button {
+  height: 35px;
+  width: 60px;
+  border-radius: 20px;
+  color: white;
+  background-color: rgb(254, 74, 73);
+  border: none;
+  margin: 10px 20px 0px 20px;
+  font-family: Comfortaa;
+}
+
+.confirmation-button:hover{
+  background-color: rgb(0, 212, 237);
+  cursor: pointer;
+}
